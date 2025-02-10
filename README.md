@@ -18,10 +18,11 @@ pip install -r requirements.txt
 ```
 
 2. Set up environment variables:
- ```add your groq API here --> os.environ["GROQ_API_KEY"] = write you api key
+ ```add your groq API here
+--> os.environ["GROQ_API_KEY"] = write you api key
 ```
 
-4. Run the main script:
+3. Run the main script:
 ```bash
 python main.py
 ```
