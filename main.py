@@ -34,8 +34,8 @@ builder = StateGraph(GraphState)
 # )
 
 # Create the LLM
-
-os.environ["GROQ_API_KEY"] = "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"
+# Put you groq Api key here 
+os.environ["GROQ_API_KEY"] = 
 llm = ChatGroq(
     model="deepseek-r1-distill-llama-70b",  # High-quality code generation model
     temperature=0.1,                         # Slight randomness for creativity
