@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ai_code_generator:
+    build: .
+    container_name: ai_code_generator
+    volumes:
+      - ./:/app
+      - ./generated_files:/app/generated_files
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    networks:
+      - ai_network
+
+networks:
+  ai_network:
+    driver: bridge
